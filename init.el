@@ -37,6 +37,8 @@
 (require-package 'diminish)
 (require-package 'scratch)
 (require-package 'mwe-log-commands)
+(require-package 'ace-isearch)
+(global-ace-isearch-mode t)
 
 (require 'init-frame-hooks)
 (require 'init-xterm)
@@ -100,7 +102,7 @@
 (require 'init-misc)
 
 (require 'init-dash)
-(require 'init-ledger)
+;; (require 'init-ledger)
 ;; Extra packages which don't require any configuration
 
 (require-package 'gnuplot)
