@@ -14,4 +14,14 @@
 
 (set-frame-font "Camingo Code 10")
 
+(setq backup-directory-alist '(("." . "~/emacs.saves/")))
+
+(require-package 'hydra)
+
+(defhydra hydra-zoom (global-map "<f2>")
+  "zoom"
+  ("g" text-scale-increase "in")
+  ("l" text-scale-decrease "out"))
+
+
 (provide 'init-local)
